@@ -47,7 +47,7 @@ export default class OtpInput extends Component<Props, State> {
         ]}
       >
         <TextInput
-          clearTextOnFocus={true}
+          clearTextOnFocus={false}
           keyboardType="phone-pad"
           maxLength={1}
           onBlur={this._onBlur}
