@@ -17,7 +17,7 @@ export default class OtpInput extends Component {
             containerStyles,
             { borderColor: this.state.isFocused ? focusedBorderColor : unFocusedBorderColor },
         ]}>
-        <TextInput clearTextOnFocus={true} keyboardType="phone-pad" maxLength={1} onBlur={this._onBlur} onChangeText={updateText} onFocus={this._onFocus} onKeyPress={handleBackspace} ref={input => (this.input = input)} selectTextOnFocus={true} style={[defaultStyles.otpInput, inputStyles, error && { color: textErrorColor }]} underlineColorAndroid="transparent" value={value}/>
+        <TextInput clearTextOnFocus={false} keyboardType="phone-pad" maxLength={1} onBlur={this._onBlur} onChangeText={updateText} onFocus={this._onFocus} onKeyPress={handleBackspace} ref={input => (this.input = input)} selectTextOnFocus={true} style={[defaultStyles.otpInput, inputStyles, error && { color: textErrorColor }]} underlineColorAndroid="transparent" value={value}/>
       </View>);
     }
 }
